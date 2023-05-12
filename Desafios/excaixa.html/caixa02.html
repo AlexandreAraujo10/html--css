@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        header {
+            background-color: lightslategray;
+            padding: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: rgb(158, 158, 158);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color:  rgb(158, 158, 158);
+            padding: 3px;
+        }
+        nav > a {
+            color: white;
+            text-decoration: none;
+            margin: 30px;
+            font-weight: bold;
+        }
+        nav > a:hover {
+            color: black;
+            text-decoration: underline;
+            
+        }
+        section {
+            background-color: dimgray;
+            text-align: center;
+            text-decoration: underline;
+            padding: 1px;
+            padding-left: 3px;
+            font-weight: bold;
+        }
+        article > aside {
+            background-color: dimgray;
+            padding-left: 3px;
+        }
+        footer {
+            background-color: lightslategray;
+            padding: 5px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Técnologia</p>
+        </section>
+        <section id="notícias">
+
+        </section>
+
+        <article>
+            <h2>Notícias sobre o Brasil</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eos temporibus tempore sapiente dolor ea eveniet, vel, error labore fugiat quos est suscipit tenetur. Qui dolorem magni eveniet fugit vel?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reiciendis nobis officia fugit pariatur inventore nam nostrum, ipsum blanditiis velit voluptatum laudantium odit accusantium nulla eos iure voluptates vitae voluptas.</p>
+
+        </article>
+        <article>
+            <aside>
+                <p>Artigo escrito por Alexandre Araujo</p>
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por Lugares e Viagens</p>
+    </footer>
+    
+</body>
+</html>
