@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh; /* (adaptar a altura da imagem) */
@@ -13,11 +13,12 @@
             background-position: center top; /* para posicionar a imagem no centro e encima */
             background-repeat: repeat-y; /* para repetir imagens só em pé */
             background-size: cover; /* vai cobrir a tela inteira com a imagem, mas não exibe 100% da imagem */
+            background-attachment: fixed; /*para fixar a imagem na hora de rolagem */
 
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
