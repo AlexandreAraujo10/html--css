@@ -7,12 +7,27 @@
     <title>Alinhamento Vertical</title>
     <style>
         #container {
-            height: 500px;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%; /* isso faz com que a imagem (target 001.png) á cima, fique 100% do tamanho */
+
+            position: relative; /* é uma posição relativa normalmente (ja é normalmente) nem era preciso colocar */
+            height: 96vh; /* é altura do vilporte dessa àrea branca */
+            padding: 10px;
             background-color: purple;
         }
         #conteudo {
-            height: 200px;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%; /* isso faz com que a imagem (target 001.png) á cima, fique 100% do tamanho */
+            position: absolute; /* mas quando vc colocar esse posicionamento, vc pode colocar as propriedades á baixo */
+            height: 200px; 
+            width: 400px;
             background-color:yellow;
+
+            left: 50%; /* propriedades citadas á cima */
+            top: 50%;  /* propriedades citadas á cima */
+
+            transform: translate(-50%, -50%); /* pra vc mexer o (#conteudo= 50% esquerda, 50% cima) pro lado que vc quiser, use (trasnform) consegui ir pra dir. esqu. cima baixo */
+            
         }
     </style>
 </head>
