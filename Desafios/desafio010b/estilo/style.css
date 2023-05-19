@@ -55,7 +55,7 @@ header > h1 {
     color:white;
     font-family: var(--fonte-destaque);
     font-size: 0.5em;
-    background-size: cover;
+    font-size: unset;
     margin-bottom: 20px;
     margin: auto;
     font-size: 3em;
