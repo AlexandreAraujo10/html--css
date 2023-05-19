@@ -54,8 +54,8 @@ header {
 header > h1 {
     color:white;
     font-family: var(--fonte-destaque);
-    max-width: 600px;
-    width: 100vh;
+    
+    width: 100%;
     margin-bottom: 20px;
     margin: auto;
     font-size: 3em;
