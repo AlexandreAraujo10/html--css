@@ -1,2 +1,55 @@
 @charset "UTF 8";
 
+*{
+    margin: 0px;  /* essa configuração é para recetar todos os elementos */
+    padding: 0px; /* essa configuração é para recetar todos os elementos */
+}
+html, body {
+    min-height: 100vh; /* tamanho mínimo da largura 100% (html, do site) */
+    background-color: darkgray;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center; /*centralizar o cabeçalho */
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /* esse comando é p/ deixar todas as letras maiusculas e as primeiras maiores que as outras */
+}
+header > p {
+    padding-bottom: 50px;
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-top: 10vh; /* conf. faz com que seja 10% da altura , e usar 10vh facilita na adptação do tamanho (ajustável ou responsiva a pag.) */
+    padding-bottom: 10vh; /* conf. faz com que seja 10% a baixo */
+    line-height: 2em; /* espaçamento entre linhas */
+    padding-left: 30px;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(65, 63, 63);
+    color: white;
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 400px; /* é o tamanho do background-color */
+    padding-left: 5px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
