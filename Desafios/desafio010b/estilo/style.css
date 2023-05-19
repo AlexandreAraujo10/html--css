@@ -63,7 +63,7 @@ header > p {
     color: white;
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
-    max-width: 600px;
+    display: inline-block;
     margin: auto;
     padding-bottom: 20px;
     padding-left: 10px;
