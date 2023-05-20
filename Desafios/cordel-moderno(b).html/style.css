@@ -1,5 +1,11 @@
 @charset "UTF8";
 
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body {
     background-color: darkgrey;
 }
@@ -8,9 +14,19 @@ header {
     background-color: black;
     color: white;
     padding: 40px;
-    margin: -10px;
+    
     font-size: 2em;
 }
 header > p {
     font-size: 0.6em;
+}
+section {
+    padding-top: 10hv;
+    padding-bottom: 10hv;
+}
+section#img1 {
+    background-image: url('imagens/background001.jpg');
+}
+section#img2 {
+    background-image: url('imagens/background002.jpg');
 }
