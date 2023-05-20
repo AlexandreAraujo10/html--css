@@ -23,7 +23,7 @@ header {
     text-align: center;
 }
 header h1 {
-    font-family: var(--fonte3);
+    font-family: var(--fonte2);
     font-size: 4em;
     padding-top: 50px;
     font-variant: small-caps; /* todas as letras maiúsculas, mas as primeiras (maiores) */
@@ -34,7 +34,7 @@ header p {
     padding-bottom: 50px;
 }
 section {
-    font-family: var(--fonte2);
+    font-family: var(--fonte3);
     font-size: 1.6em;
     line-height: 2em;
     padding-top: 10vh; /* vh dá um efeito maior na rolagem da pag. */
@@ -49,15 +49,28 @@ section.normal {
 section.imagem {
     background-color: rgb(48, 47, 47);
     color: white;
-    
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
 section.imagem > p {
     background-color: rgba(7, 7, 7, 0.308);
     width: 400px;
     padding-left: 10px;
-    text-shadow: 6px 6px 0px black;
+    text-shadow: 1px 1px 0px  black;
+    
 } 
-
+section#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position:right;
+    background-size: cover; /* pra encaixar melhor a imagem */
+    background-attachment: fixed; /* fixar a imagem, para rolar a pag. e passar por cima */
+    
+}
+section#img02 {
+    background-image: url('imagens/background002.jpg');
+    background-position:right;
+    background-size: cover;
+    background-attachment: fixed;
+}
 a {
     color: white;
     text-decoration: none;
