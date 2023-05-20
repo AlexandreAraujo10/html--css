@@ -9,8 +9,70 @@
     --fonte2: 'Passion One', cursiva;
     --fonte3: 'Sriracha', cursiva;
 }
-
 *{
     margin: 0px;
     padding: 0px;
+}
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header h1 {
+    font-family: var(--fonte3);
+    font-size: 4em;
+    padding-top: 50px;
+    font-variant: small-caps; /* todas as letras maiúsculas, mas as primeiras (maiores) */
+}
+header p {
+    font-family: var(--fonte1);
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+section {
+    font-family: var(--fonte2);
+    font-size: 1.6em;
+    line-height: 2em;
+    padding-top: 10vh; /* vh dá um efeito maior na rolagem da pag. */
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(48, 47, 47);
+    color: white;
+    
+}
+section.imagem > p {
+    background-color: rgba(7, 7, 7, 0.308);
+    width: 400px;
+    padding-left: 10px;
+    text-shadow: 6px 6px 0px black;
+} 
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    font-family: var(--fonte1);
+    font-size: 1;
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+}
+footer > p {
+    font-weight: bold;
+    color: white;
 }
