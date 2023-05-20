@@ -23,6 +23,8 @@ header > p {
 section {
     padding-top: 10hv;
     padding-bottom: 10hv;
+    line-height: 2em;
+    padding-left: 30px;
 }
 section#img1 {
     background-image: url('imagens/background001.jpg');
