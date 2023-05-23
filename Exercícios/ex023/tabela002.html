@@ -20,6 +20,12 @@
         td.num {
             text-align: right;
         }
+        caption { /* é usado como uma legenda depois do cabeçalho (h1), depois do <table> */
+            font-size:1.0em ;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -28,10 +34,11 @@
 </head>
 <body>
     <h1>Uso de tabelas grandes </h1>
-    <h2>Lista de unidades federativas do Brasil por população em 2022</h2>
+    
     <!-- 
         ANATOMIA PARA TABELAS GRANDES 
         TABLE
+            CAPITION
             THEAD
                 TR, TD, TH
             TBODY
@@ -40,15 +47,16 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Lista de unidades federativas do Brasil por população em 2022</caption>
         <thead>
             <tr>
-                <th>Estado</th> <!-- Cabeça -->  
-                <th>População</th>
+                <th scope="col">Estado</th> <!-- Cabeça -->  
+                <th scope="col" style="width: 50px;">População</th> <!-- (scope="col") é um título de coluna, (width:50px)  é a largura da População -->
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>São Paulo</td>
+                <td>São Paulo</td> 
                 <td class="num">46.024.937</td>
             </tr>
             <tr>
@@ -158,8 +166,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>207 883 699</strong></td>
+                <th scope="row">Total de Habitantes</th> <!--(scope="rol") é um título de coluna -->
+                <td class="num"><strong>207.883.699</strong></td>
             </tr>
         </tfoot>
     </table>
