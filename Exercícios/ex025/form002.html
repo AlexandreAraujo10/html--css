@@ -6,6 +6,21 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="Post" autocomplete="on"> <!-- (autocomplete) o navegador sugere que seja tal palavra já digitada -->
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="12" placeholder="nome do usuário" autocomplete="username"> <!-- (required) é p/ não enviar, sem preencher usuário,(minlength) é o mínimo de letras aceita, (maxlength) máximo de letras aceita, (size=10) é o tamanho da caixa c/ rolagem, (placeholder) é uma frase indicando o usuário, (autopomplete=username) ele sugeri que seja tal nome -->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="6" maxlength="6" size="10" placeholder="mínimo 6 letras" autocomplete="current-password"> <!-- usar(password) para senhas, (autocomplete=current-password) ele sugeri que seja tal senha -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar"> <!-- é um botão p/ enviar -->
+            <input type="reset" value="Limpar"> <!-- é um botão p/ limpar -->
+        </p>
+    </form>
     
 </body>
 </html>
