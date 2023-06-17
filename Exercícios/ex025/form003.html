@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required> <!-- (number) é p/ fazer uma média, (min=0) é p/ atribuir o mínimo em média, (max=10) é p/ atribuir o máximo em média, (step=0.1) é p/ atribuir em décimos à média -->
+        </p>
+        <p>
+            <label for="imes">Período Letivo:</label>
+            <input type="month" name="mes" id="imes" required> <!-- (month) é p/ atribuir o mês e o ano letivo, Período -->
+        </p>
+        <p>
+            <label for="idia">Dia da Prova:</label>
+            <input type="date" name="dia" id="idia" required> <!-- (date) é p/ atribuir o dia, mês e ano -->
+        </p>
+        <p>
+            <label for="ihora">Horário da Prova:</label>
+            <input type="time" name="horario" id="ihora"> <!-- (time) é p/ atribuir o horário -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
