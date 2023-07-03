@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- esse link é p/ baixar o ícone (menu) do google -->
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i> <!-- essa conf. é p/ o menuzinho burguer -->
+        <menu id="itens"> <!-- esse (id) é p/ a conf. javascript -->
             <ul>
                 <li><a href="#"> Opção 1</a></li>
                 <li><a href="#"> Opção 2</a></li>
@@ -29,5 +31,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor adipisci earum beatae quia molestias quisquam autem? Neque cupiditate nemo iure itaque eaque provident dolorem sit culpa maiores, sunt iste molestiae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime eligendi illo unde fugit, numquam ipsam obcaecati quaerat ratione magnam impedit rerum sunt at molestias. Quis harum nam facere eligendi libero.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() { /* esses comandos em javascript, é p/ mostrar e recolher o menu completo */
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                    itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
