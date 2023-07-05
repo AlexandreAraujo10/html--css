@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Typical Device Breackpoints
+-------------------------------
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px){
+    i#burguer {
+        display: none; /* essa conf. é p/ quando a tela aumentar acima de  celular 768px, não mostrará o (menu hamburguer) */
+    }
+
+    menu {
+        display: block; /* essa conf. é p/ mostrar o menu completo, Opção de 1 à 5 quando aumentar a tela acima de celular 768px */
+    }
+
+    menu > ul > li {
+        display: inline-block; /* é p/ deixar o menu, um ao lado do outro */
+
+    }
+    main {
+        width: 768px; /* é p quando aumentar a tela maior que tela (celular 768px), continuar o tamanho do (main 768px) */
+    }
+}
