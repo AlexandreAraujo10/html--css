@@ -19,7 +19,7 @@ Grandes Telas: acima de 1200px
     }
     main {
         width: 90vw; /* é p/ mostrar a mensagem 90% da folha de impressão */
-        border: 2px solid black;
+        border: 2px solid black; /* é p/ fazer uma borda sólida em volta */
     }
     main::after {
         content: 'Essa impressão foi feita através do site www.cursoemvideo.com'; /* essa conf. é p/ mostrar essa mensagem na impressão */
