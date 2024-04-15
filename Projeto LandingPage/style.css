@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient( #040410, #191861, #ffff);
+    color:white;
+}
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
